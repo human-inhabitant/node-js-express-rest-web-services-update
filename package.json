@@ -4,23 +4,27 @@
   "description": "RESTful Web Services with Node.js and Express",
   "main": "app.js",
   "dependencies": {
-    "angular": "^1.8.0",
-    "angular-animate": "^1.8.0",
-    "angular-cookies": "^1.8.0",
-    "angular-route": "^1.8.0",
-    "angular-ui-bootstrap": "^2.5.6",
-    "body-parser": "^1.19.0",
-    "bootstrap": "^3.4.1",
-    "cookie-parser": "^1.4.5",
-    "debug": "^4.2.0",
-    "express": "^4.17.1",
-    "jade": "^1.11.0",
-    "jquery": "^1.12.4",
-    "morgan": "^1.10.0",
-    "serve-favicon": "^2.5.0"
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.10.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.1"
   },
   "scripts": {
-    "start": "nodemon server"
+    "lint": "eslint .",
+    "start": "nodemon app.js"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "ignore": [
+      "node_modules/**/node_modules"
+    ],
+    "delay": 25e2,
+    "env": {
+      "NODE_ENV": "development",
+      "PORT": 4e3
+    }
   },
   "repository": {
     "type": "git",
