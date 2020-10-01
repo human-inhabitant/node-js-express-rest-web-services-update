@@ -2,7 +2,7 @@
   "name": "node-js-express-rest-web-services-update",
   "version": "0.6.5",
   "description": "RESTful Web Services with Node.js and Express",
-  "main": "server.js",
+  "main": "app.js",
   "dependencies": {
     "angular": "^1.8.0",
     "angular-animate": "^1.8.0",
